@@ -1,4 +1,4 @@
-const contactForm = document.querySelector("#contactForm");
+const fromContact = document.querySelector("#fromContact");
 const firstName = document.querySelector("#firstName");
 const lastName = document.querySelector("#lastName");
 const email = document.querySelector("#email");
@@ -65,7 +65,7 @@ function showSuccess(input) {
   console.log(errorDiv);
   errorDiv.style.display = "none";
 }
-contactForm.addEventListener("submit", (e) => {
+fromContact.addEventListener("submit", (e) => {
   e.preventDefault();
   checkRequired([firstName, lastName, email, company]);
   checkEmail(email);

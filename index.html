@@ -64,14 +64,14 @@
                         <div class="hero-col-wrapper">
                             <div class="contact-form-area">
                                 <h2 class="mb-3">Contact Us</h2>
-                                <form action="/thanks.html" id="contactForm">
+                                <form action="/thanks.html" id="fromContact">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="input-container">
                                                 <label class="input-label">First Name</label>
                                                 <input type="text" class="input-1" onfocus="setFocus(true)"
                                                     onblur="setFocus(false)" id="firstName" />
-                                                <div class="error-message-area">
+                                                <div class="error-message">
 
                                                 </div>
                                             </div>
@@ -83,7 +83,7 @@
                                                 <label class="input-label">Last Name</label>
                                                 <input type="text" class="input-1" onfocus="setFocus(true)"
                                                     onblur="setFocus(false)" id="lastName">
-                                                <div class="error-message-area">
+                                                <div class="error-message">
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +94,7 @@
                                                 <label class="input-label">Business Email</label>
                                                 <input type="text" class="input-1" onfocus="setFocus(true)"
                                                     onblur="setFocus(false)" id="email">
-                                                <div class="error-message-area">
+                                                <div class="error-message">
                                                 </div>
                                             </div>
                                         </div>
@@ -105,7 +105,7 @@
                                                 <label class="input-label">Company</label>
                                                 <input type="text" class="input-1" onfocus="setFocus(true)"
                                                     onblur="setFocus(false)" id="company">
-                                                <div class="error-message-area">
+                                                <div class="error-message">
                                                 </div>
                                             </div>
                                         </div>
@@ -138,25 +138,25 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/images/border.png" class="wave-top" alt="border" />
+        <img src="./assets/images/border.png" class="hero-border" alt="border" />
 
-        <svg width="1440" height="90 " class="wave-top" viewBox="0 0 1440 90" fill="none"
+        <svg width="1440" height="90 " class="hero-border" viewBox="0 0 1440 90" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M0 55.1705C310 -118.33 926 184.67 1440 55.1705V89.1704H0V55.1705Z" fill="#F5F5F5" />
         </svg>
     </div>
 
     <!-- Info1 Section -->
-    <div class="section-info1 section-padding faded-section">
+    <div class="section-info1 section-padding gray-section">
         <div class="container">
-            <div class="info1-inner-area">
+            <div class="info1-inner">
                 <!-- Image Wrapper-->
                 <div class="info1-images-wrapper">
                     <div class="row rowCols3">
                         <div class="col">
                             <!-- Info Card Wrapper -->
                             <div class="info1-card-wrapper">
-                                <div class="img-area">
+                                <div class="img-wrapper">
                                     <img src="/assets/images/img1.png" class="fit-image" alt="Old Couple">
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                         <div class="col">
                             <!-- Info Card Wrapper -->
                             <div class="info1-card-wrapper">
-                                <div class="img-area">
+                                <div class="img-wrapper">
                                     <img src="/assets/images/img2.png" class="fit-image" alt="Old Couple">
                                 </div>
                             </div>
@@ -174,7 +174,7 @@
                         <div class="col">
                             <!-- Info Card Wrapper -->
                             <div class="info1-card-wrapper">
-                                <div class="img-area">
+                                <div class="img-wrapper">
                                     <img src="/assets/images/img3.png" class="fit-image" alt="A group of old people">
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
 
                 </div>
                 <!-- Section Header -->
-                <div class="section-heading-wrapper mt-5">
+                <div class="heading-wrapper mt-5">
                     <h2><span class="stroked-text" data-string="WE">WE</span> UNDERSTAND</h2>
                 </div>
 
@@ -220,7 +220,7 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-12">
-                        <div class="info1-card-wrapper layoutControlIpad">
+                        <div class="info1-card-wrapper table-layout">
                             <!-- Text Content-->
                             <div class="content-area">
                                 <p class="card-text mt-2">
@@ -249,23 +249,23 @@
     <!-- Testimonials Section -->
     <div class="section-testimonial section-padding">
         <div class="container">
-            <div class="testimonial-inner-parent">
+            <div class="testimonial-inner">
                 <!-- Carousel Items -->
-                <div id="caraouselItems" class="carousel slide" data-bs-ride="true">
+                <div id="itemsCaraousel" class="carousel slide" data-bs-ride="true">
                     <!-- Carousel Indicators-->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#caraouselItems" data-bs-slide-to="0" class="active"
+                        <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#caraouselItems" data-bs-slide-to="1"
+                        <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#caraouselItems" data-bs-slide-to="2"
+                        <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="testimonial-card-container">
-                                <div class="img-area shadow">
+                                <div class="img-wrapper shadow">
                                     <img src="./assets/images/client1.png" alt="First Client" class="fit-image" />
                                 </div>
                                 <div class="content-area">
@@ -282,7 +282,7 @@
 
                         <div class="carousel-item">
                             <div class="testimonial-card-container">
-                                <div class="img-area">
+                                <div class="img-wrapper">
                                     <img src="./assets/images/client2.png" alt="Second Client" class="fit-image" />
                                 </div>
                                 <div class="content-area">
@@ -299,7 +299,7 @@
 
                         <div class="carousel-item">
                             <div class="testimonial-card-container">
-                                <div class="img-area shadow">
+                                <div class="img-wrapper shadow">
                                     <img src="./assets/images/client3.png" alt="Thrid Client" class="fit-image" />
                                 </div>
                                 <div class="content-area">
@@ -316,13 +316,13 @@
                     </div>
 
                     <!-- Previous Icon -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#caraouselItems"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#itemsCaraousel"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <!-- Next Icon -->
-                    <button class="carousel-control-next" type="button" data-bs-target="#caraouselItems"
+                    <button class="carousel-control-next" type="button" data-bs-target="#itemsCaraousel"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -335,9 +335,9 @@
     <!-- Info2 Section -->
     <div class="secion-info2 section-padding pb-0">
         <div class="container">
-            <div class="info2-inner-area">
+            <div class="info2-inner">
                 <!-- Heading Wrapper -->
-                <div class="section-heading-wrapper">
+                <div class="heading-wrapper">
                     <h2>
                         <span class="stroked-text" data-string="We">We</span>
                         can organize everything
@@ -389,7 +389,7 @@
     <div class="section-info2-card mt-5" style="padding: 0 1rem 1rem 1rem">
         <div class="container">
             <!-- Card Inner Area -->
-            <div class="section-info2-card-inner-area">
+            <div class="section-info2-card-inner">
                 <div class="row">
                     <div class="col-lg-4 mb-3 relative col-sm-6">
                         <div class="section-info2-card-container">
@@ -397,7 +397,7 @@
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
                         </div>
                         <!-- Custom Tooltip -->
-                        <div class="tooltip-area">
+                        <div class="custom-tooltip">
                             We’re experienced in our individual crafts and understand how
                             each one of our roles impacts your plan holistically.
                         </div>
@@ -412,7 +412,7 @@
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
                         </div>
                         <!-- Custom Tooltip -->
-                        <div class="tooltip-area">
+                        <div class="custom-tooltip">
                             We’re experienced in our individual crafts and understand how
                             each one of our roles impacts your plan holistically.
                         </div>
@@ -424,7 +424,7 @@
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
                         </div>
                         <!-- Custom Tooltip -->
-                        <div class="tooltip-area">
+                        <div class="custom-tooltip">
                             We’re experienced in our individual crafts and understand how
                             each one of our roles impacts your plan holistically.
                         </div>
@@ -436,7 +436,7 @@
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
                         </div>
                         <!-- Custom Tooltip -->
-                        <div class="tooltip-area">
+                        <div class="custom-tooltip">
                             We’re experienced in our individual crafts and understand how
                             each one of our roles impacts your plan holistically.
                         </div>
@@ -448,7 +448,7 @@
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
                         </div>
                         <!-- Custom Tooltip -->
-                        <div class="tooltip-area">
+                        <div class="custom-tooltip">
                             We’re experienced in our individual crafts and understand how
                             each one of our roles impacts your plan holistically.
                         </div>
@@ -460,7 +460,7 @@
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
                         </div>
                         <!-- Custom Tooltip -->
-                        <div class="tooltip-area">
+                        <div class="custom-tooltip">
                             We’re experienced in our individual crafts and understand how
                             each one of our roles impacts your plan holistically.
                         </div>
@@ -473,16 +473,16 @@
     <!-- Video Section-->
     <div class="section-video">
         <div class="container">
-            <div class="video-sec-inner-container">
+            <div class="video-inner-container">
                 <div class="row">
                     <div class="col-lg-6">
+                        <!-- Video Columns Wrapper -->
                         <div class="video-col-wrapper">
-                            <div class="section-heading-wrapper">
+                            <!-- Heading Wrapper-->
+                            <div class="heading-wrapper">
                                 <h2 style="color: #fff"><span class="stroked-text" data-string="Watch">Watch</span> the
                                     video</h2>
                             </div>
-                            <!-- heading wrapper -->
-
                             <ul>
                                 <li>
                                     <span>Needs Assessment</span>
@@ -508,41 +508,38 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- video-col-wrapper -->
                     </div>
 
                     <div class="col-lg-6">
                         <div class="video-col-wrapper d-flex align-items-center justify-content-center">
-
                         </div>
-                        <!-- video-col-wrapper -->
                     </div>
                 </div>
             </div>
-            <!-- video-sec-inner-container -->
         </div>
-        <!-- theme container -->
-        <img src="./assets/images/vid-bg.png" class="video-bg-img" alt="Section background" />
-        <img src="./assets/images/mob-vid-bg.png" class="mob-video-bg-img" alt="Mobile background" />
-        <img src="./assets/images/vid-opacity-bg.png" class="video-bg-img" style="width: 55%; z-index: 2"
+        <img src="/assets/images/vid-bg.png" class="video-bg-img" alt="Section background" />
+        <img src="/assets/images/mob-vid-bg.png" class="mob-video-bg-img" alt="Mobile background" />
+        <img src="/assets/images/vid-opacity-bg.png" class="video-bg-img" style="width: 55%; z-index: 2"
             alt="background shader" />
         <div class="videoposture-wrapper">
-            <img src="./assets/images/vid-2nd-bg.jpg" class="videoPosture-img" alt="Kids sitting" />
-            <img src="./assets/images/play-icon.svg" class="videoIcon" alt="Play button" data-bs-toggle="modal"
-                data-bs-target="#samplevideo" />
+            <img src="/assets/images/vid-2nd-bg.jpg" class="vid-bg-img2" alt="Kids sitting" />
+            <div class="play">
+                <img src="/assets/images/play-icon.svg" class="play-icon" alt="Play button" data-bs-toggle="modal"
+                data-bs-target="#videoPlayer" />
+            </div>
         </div>
     </div>
 
-    <div class="modal fade" id="samplevideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Video Player Modal -->
+    <div class="modal" id="videoPlayer" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <video controls autoplay id="video1">
+                    <video controls autoplay id="vid">
                         <source src="/assets/images/video.mp4" type="video/mp4">
-                        <!-- <source src="movie.ogg" type="video/ogg"> -->
                         Your browser does not support the video tag.
                     </video>
 
@@ -573,9 +570,7 @@
         </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
