@@ -813,15 +813,16 @@ span.stroked-text.stroke-color-green::after {
 }
 
 .section-info2-card-container img {
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     cursor: pointer;
     margin: 10px;
     opacity: 0;
+    display: none;
 }
 
 .section-info2-card-container:hover~.custom-tooltip,
 .section-info2-card-container:hover img {
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     display: block;
     opacity: 1;
 }
