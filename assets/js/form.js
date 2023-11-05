@@ -1,18 +1,20 @@
-const fromContact = document.querySelector("#fromContact");
+const formContact = document.querySelector("#formContact");
 const firstName = document.querySelector("#firstName");
 const lastName = document.querySelector("#lastName");
 const email = document.querySelector("#email");
 const company = document.querySelector("#company");
-const selectedCountry = document.querySelector("#countrySelect");
 let flagEmail = false;
-let inputflag = false;
+let flagFirstName = false;
+let flagLastName = false;
+let flagCompany = false;
+
 
 function getInput(InputsArray) {
   InputsArray.map((input) => {
     localStorage.setItem(input.id, input.value);
   });
-  if (flagEmail === true && inputflag === true) {
-    window.location.replace("thanks.html"); // does not appear on history
+  if (flagEmail === true && flagFirstName === true && flagLastName === true && flagCompany === true) {
+    window.location.replace("thanks.html");
   } else {
     return;
   }
@@ -20,8 +22,7 @@ function getInput(InputsArray) {
 
 function checkEmail(input) {
   const emailRegex =
-    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  //   return emailRegex.test(String(email).toLowerCase());
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;  
   if (input.value.trim() === "") {
     showError(input, "This field cannot be empty. Please fill in it.");
   } else {
@@ -33,21 +34,35 @@ function checkEmail(input) {
     }
   }
 }
-function checkRequired(inputArray) {
-  console.log;
-  inputArray.map((input) => {
-    if (input.value.trim() === "") {
-      showError(input, "This field cannot be empty. Please fill in it.");
-    } else {
-      showSuccess(input);
 
-      inputflag = true;
-    }
-  });
+function checkFirstName(input) {
+  if (input.value.trim() === "") {
+    showError(input, "This field cannot be empty. Please fill in it.");      
+  } else {
+    showSuccess(input);
+    flagFirstName = true;
+  }
 }
 
-async function showError(input, message) {
-  // console.log()
+function checkLastName(input) {
+  if (input.value.trim() === "") {
+    showError(input, "This field cannot be empty. Please fill in it.");      
+  } else {
+    showSuccess(input);
+    flagLastName = true;
+  }
+}
+
+function checkCompany(input) {
+  if (input.value.trim() === "") {
+    showError(input, "This field cannot be empty. Please fill in it.");      
+  } else {
+    showSuccess(input);
+    flagCompany = true;
+  }
+}
+
+async function showError(input, message) {  
   const parent = input.parentElement;
   parent.classList.add("error");
   let childElements = parent.children;
@@ -65,11 +80,13 @@ function showSuccess(input) {
   console.log(errorDiv);
   errorDiv.style.display = "none";
 }
-fromContact.addEventListener("submit", (e) => {
+formContact.addEventListener("submit", (e) => {
   e.preventDefault();
-  checkRequired([firstName, lastName, email, company]);
+  checkFirstName(firstName);
+  checkLastName(lastName);
+  checkCompany(company);
   checkEmail(email);
-  getInput([firstName, lastName, email, company, countrySelect]);
+  getInput([firstName, lastName, email, company]);
 });
 
 function setFocus(on) {
@@ -95,7 +112,6 @@ function setFocus(on) {
 }
 
 function UILabel() {
-  alert("hello");
   if (firstName.value.trim() === "")
     firstName.parentNode.classList.add("focus");
 }
