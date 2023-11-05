@@ -916,6 +916,16 @@ span.stroked-text.stroke-color-green::after {
     position: relative;
 }
 
+.section-video .logo-container {
+    width: 100%;
+
+    height: auto;
+}
+
+.section-video .logo-container img {
+    height: 40px;
+}
+
 .video-inner-container {
     width: 100%;
     position: relative;
@@ -1017,6 +1027,18 @@ span.stroked-text.stroke-color-green::after {
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: opacity 0.5s linear;
+
+}
+
+.logo-footer {
+    height: 35px;
+    cursor: pointer;
+    transition: opacity 0.5s linear;
+    position: absolute;
+    top: 89.2%;
+    left: 81.8%;
     z-index: 10;
     transition: opacity 0.5s linear;
 }
