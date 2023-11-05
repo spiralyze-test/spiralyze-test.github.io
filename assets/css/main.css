@@ -955,7 +955,8 @@ span.stroked-text.stroke-color-green::after {
 }
 
 .modal-dialog {
-    max-width: calc(100% - 130px);
+    margin: 1rem;
+    max-width: calc(100%);
 }
 
 .modal-dialog video {
