@@ -296,11 +296,6 @@ select option {
     text-align: right;
 }
 
-.showNavMobCss {
-
-    height: 169px !important;
-}
-
 .custom-tooltip {
     width: 100%;
     max-width: 280px;
@@ -456,6 +451,86 @@ input:-webkit-autofill:active {
     height: 20px;
 }
 
+#menu {
+    -moz-transform: translateX(20rem);
+    -webkit-transform: translateX(20rem);
+    -ms-transform: translateX(20rem);
+    transform: translateX(20rem);
+    -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: none;
+    color: #000;
+    height: 100%;
+    max-width: 80%;
+    overflow-y: auto;
+    padding: 3rem 2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 20rem;
+    z-index: 10002;
+}
+
+#menu ul {
+    margin-top: 45px;
+}
+
+#menu ul li {
+    padding-block: 24px;
+}
+
+#menu ul li a {
+    color: rgba(255, 255, 255, .7);
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+#menu ul li a.active {
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: thin solid #fff;
+}
+
+#menu ul li a:hover {
+    transition: .3s;
+    color: #ffffff;
+}
+
+#menu .consult {
+    padding-left: 24px;
+}
+
+#menu .consult a {
+    color: #5BC8AF;
+    text-decoration: none;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+
+#menu .hamburger-close {
+    position: absolute;
+    right: 26px;
+    top: 22px;
+}
+
+#menu.visible {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+    visibility: visible;
+}
 
 .section-hero {
     width: 100%;
@@ -946,7 +1021,7 @@ span.stroked-text.stroke-color-green::after {
     transition: opacity 0.5s linear;
 }
 
-.play img:hover{
+.play img:hover {
     content: url("/assets/images/play-icon-active.svg");
 }
 
@@ -995,7 +1070,7 @@ span.stroked-text.stroke-color-green::after {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;    
+    line-height: 1.5rem;
 }
 
 .footer-col-wrapper p a {
@@ -1047,9 +1122,10 @@ span.stroked-text.stroke-color-green::after {
     border-radius: 5px;
 }
 
-.container-thanks p{
+.container-thanks p {
     color: #fff;
 }
+
 .container-thanks a {
     color: #5BC8AF;
     font-family: Montserrat;

@@ -21,7 +21,7 @@
                 </div>
                 <!-- Menu -->
                 <div class="hamburger-container">
-                    <img src="/assets/images/hamburger.svg" alt="Menu">
+                    <a href="javascript:void(0);" onclick="mobileMenu()"><img src="/assets/images/hamburger.svg" alt="Menu"></a>
                 </div>
                 <div class="nav-menu-container">
                     <ul>
@@ -34,6 +34,17 @@
                         <li>Call now for a consult <a href="tel:123456789">123.456.789</a></li>
                     </ul>
                 </div>
+                <nav id="menu">
+                    <a href="javascript:void(0);" onclick="mobileMenu()" class="hamburger-close"><img style="height: 20px" src="/assets/images/hamburger.svg" alt="Menu"></a>
+                    <ul class="links">                        
+                        <li><a href="" class="active">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                    <ul class="consult">
+                        <li><a href="tel:123456789"><span style="color: #fff;">Call now for a consult</span> 123.456.789</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -575,7 +586,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
-
+    <script>
+        function mobileMenu() {
+            var m = document.getElementById("menu");
+            if (m.classList.contains("visible")) {
+                m.classList.remove("visible");
+            } else {
+                m.classList.add("visible");
+            }
+        }
+    </script>
 </body>
 
 </html>

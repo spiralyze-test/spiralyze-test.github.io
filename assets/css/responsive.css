@@ -190,6 +190,10 @@
     display: block;
   }
 
+  .nav-menu-container .nav-bar{
+    display: none;
+  }
+
   .nav-menu-container ul {
     text-align: right;
     margin-bottom: 5px;
