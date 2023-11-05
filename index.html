@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiralyze</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="section-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <img src="/assets/images/logo.svg" alt="Logo" height="70">
+                </div>
+                <!-- Menu -->
+                <div class="hamburger-container">
+                    <img src="/assets/images/hamburger.svg" alt="Menu">
+                </div>
+                <div class="nav-menu-container">
+                    <ul>
+                        <li><a href="" class="active">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li class="nav-bar">|</li>
+                    </ul>
+                    <ul class="consult">
+                        <li>Call now for a consult <a href="tel:123456789">123.456.789</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="section-hero">
+        <div class="container">
+            <div class="section-hero-inner">
+                <div class="row">
+                    <!-- Text Column -->
+                    <div class="col-lg-6">
+                        <div class="hero-col-wrapper d-flex align-items-center">
+                            <!-- Content Wrapper -->
+                            <div class="hero-content-wrapper">
+                                <h1><span data-string="GET AN">GET AN</span> INTERVENTION</h1>
+                                <p>
+                                    Showing greater respect to older adults can be done in several ways :
+                                    acknowledging and putting to use the talents and skills of older adults; creating
+                                    intergenerational initiatives; and allowing older adults to stay active and
+                                    independent
+                                    for as long as possible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form Column -->
+                    <div class="col-lg-6">
+                        <div class="hero-col-wrapper">
+                            <div class="contact-form-area">
+                                <h2 class="mb-3">Contact Us</h2>
+                                <form action="/thanks.html" id="contactForm">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="input-container">
+                                                <label class="input-label">First Name</label>
+                                                <input type="text" class="input-1" onfocus="setFocus(true)"
+                                                    onblur="setFocus(false)" id="firstName" />
+                                                <div class="error-message-area">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <!-- Text Input-->
+                                            <div class="input-container">
+                                                <label class="input-label">Last Name</label>
+                                                <input type="text" class="input-1" onfocus="setFocus(true)"
+                                                    onblur="setFocus(false)" id="lastName">
+                                                <div class="error-message-area">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <!-- Text Input-->
+                                            <div class="input-container">
+                                                <label class="input-label">Business Email</label>
+                                                <input type="text" class="input-1" onfocus="setFocus(true)"
+                                                    onblur="setFocus(false)" id="email">
+                                                <div class="error-message-area">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <!-- Text Input-->
+                                            <div class="input-container">
+                                                <label class="input-label">Company</label>
+                                                <input type="text" class="input-1" onfocus="setFocus(true)"
+                                                    onblur="setFocus(false)" id="company">
+                                                <div class="error-message-area">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 mb-4">
+                                            <!-- Dropdown -->
+                                            <div class="input-container">
+                                                <div class="input-label">Country</div>
+
+                                                <select class="input-1" id="countrySelect" onfocus="setFocus(true)"
+                                                    onblur="setFocus(false)">
+                                                    <option value=""></option>
+                                                    <option value="India">India</option>
+                                                    <option value="USA">USA</option>
+                                                    <option value="Germany">U.K.</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <button class="custom-btn primary-btn d-block mx-auto" type="submit">
+                                            <img src="/assets/images/send-icon.svg" alt="sumbit-icon">
+                                            Submit
+                                        </button>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/border.png" class="wave-top" alt="border" />
+
+        <svg width="1440" height="90 " class="wave-top" viewBox="0 0 1440 90" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 55.1705C310 -118.33 926 184.67 1440 55.1705V89.1704H0V55.1705Z" fill="#F5F5F5" />
+        </svg>
+    </div>
+
+    <!-- Info1 Section -->
+    <div class="section-info1 section-padding faded-section">
+        <div class="container">
+            <div class="info1-inner-area">
+                <!-- Image Wrapper-->
+                <div class="info1-images-wrapper">
+                    <div class="row rowCols3">
+                        <div class="col">
+                            <!-- Info Card Wrapper -->
+                            <div class="info1-card-wrapper">
+                                <div class="img-area">
+                                    <img src="/assets/images/img1.png" class="fit-image" alt="Old Couple">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <!-- Info Card Wrapper -->
+                            <div class="info1-card-wrapper">
+                                <div class="img-area">
+                                    <img src="/assets/images/img2.png" class="fit-image" alt="Old Couple">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <!-- Info Card Wrapper -->
+                            <div class="info1-card-wrapper">
+                                <div class="img-area">
+                                    <img src="/assets/images/img3.png" class="fit-image" alt="A group of old people">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Section Header -->
+                <div class="section-heading-wrapper mt-5">
+                    <h2><span class="stroked-text" data-string="WE">WE</span> UNDERSTAND</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="info1-card-wrapper">
+                            <!-- Text Content-->
+                            <div class="content-area">
+                                <p class="card-text mt-2">
+                                    Older adults want to play active and meaningful roles in
+                                    their lives, including as part of a social network, a
+                                    neighborhood, and a community. Service providers and
+                                    policymakers must consider that a lack of sense of purpose
+                                    can become problematic as people age. Engaging them in
+                                    leisure activities and volunteer work is important.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="info1-card-wrapper">
+                            <!-- Text Content-->
+                            <div class="content-area">
+                                <p class="card-text mt-2">
+                                    Older adults want to stay active and contribute to society in a reciprocal
+                                    manner (meaning that they want to exchange their services and skills with others
+                                    for the mutual benefit of the neighborhood or community). Qualitative and
+                                    quantitative studies published from 2005 to 2016 examining the social needs of
+                                    older adults were eligible for inclusion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="info1-card-wrapper layoutControlIpad">
+                            <!-- Text Content-->
+                            <div class="content-area">
+                                <p class="card-text mt-2">
+                                    To stimulate social contacts, neighborhood initiatives can
+                                    be developed. Social meeting places, such as pubs and
+                                    churches can help to foster the development of close and
+                                    peripheral relationships.
+                                </p>
+                                <button class="custom-btn w-100 theme-secondary-btn bg-transparent mt-3">
+                                    92% Success Rate &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="100%" viewBox="0 0 17 14"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3431 0.92888L16.7071 6.29284C17.0976 6.68336 17.0976 7.31653 16.7071 7.70705L11.3431 13.071C10.9526 13.4615 10.3195 13.4615 9.92893 13.071C9.53841 12.6805 9.53841 12.0473 9.92893 11.6568L13.5858 7.99995H0V5.99995H13.5858L9.92893 2.34309C9.53841 1.95257 9.53841 1.3194 9.92893 0.92888C10.3195 0.538355 10.9526 0.538355 11.3431 0.92888Z"
+                                            fill="#5BC8AF" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="section-testimonial section-padding">
+        <div class="container">
+            <div class="testimonial-inner-parent">
+                <!-- Carousel Items -->
+                <div id="caraouselItems" class="carousel slide" data-bs-ride="true">
+                    <!-- Carousel Indicators-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#caraouselItems" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#caraouselItems" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#caraouselItems" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-card-container">
+                                <div class="img-area shadow">
+                                    <img src="./assets/images/client1.png" alt="First Client" class="fit-image" />
+                                </div>
+                                <div class="content-area">
+                                    <h3>Abbie Harvey</h3>
+                                    <p>
+                                        I have been caring for my mom & dad off and on for about
+                                        10 years now, and I know the importance of me being there
+                                        for appointments. Older people need attention, love and
+                                        care that they truly deserve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial-card-container">
+                                <div class="img-area">
+                                    <img src="./assets/images/client2.png" alt="Second Client" class="fit-image" />
+                                </div>
+                                <div class="content-area">
+                                    <h3>Abbie Harvey</h3>
+                                    <p>
+                                        I have been caring for my mom & dad off and on for about
+                                        10 years now, and I know the importance of me being there
+                                        for appointments. Older people need attention, love and
+                                        care that they truly deserve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial-card-container">
+                                <div class="img-area shadow">
+                                    <img src="./assets/images/client3.png" alt="Thrid Client" class="fit-image" />
+                                </div>
+                                <div class="content-area">
+                                    <h3>Abbie Harvey</h3>
+                                    <p>
+                                        I have been caring for my mom & dad off and on for about
+                                        10 years now, and I know the importance of me being there
+                                        for appointments. Older people need attention, love and
+                                        care that they truly deserve.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Previous Icon -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#caraouselItems"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <!-- Next Icon -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#caraouselItems"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info2 Section -->
+    <div class="secion-info2 section-padding pb-0">
+        <div class="container">
+            <div class="info2-inner-area">
+                <!-- Heading Wrapper -->
+                <div class="section-heading-wrapper">
+                    <h2>
+                        <span class="stroked-text" data-string="We">We</span>
+                        can organize everything
+                    </h2>
+                </div>
+
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- Card Wrapper -->
+                        <div class="info2-card-wrapper">
+                            <p class="card-text1">
+                                <b>Interventions</b> should focus on older adult’s desire for
+                                connectedness, participation and independence.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="info2-card-wrapper">
+                            <p class="card-text">
+                                Loneliness and social isolation are growing public health
+                                concerns in our aging society. Whilst these experiences occur
+                                across the life span, 50% of individuals aged over 60 are at
+                                risk of social isolation and one-third will experience some
+                                degree of loneliness later in life. It is vital to reduce
+                                loneliness and social isolation among older adults.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="info2-card-wrapper">
+                            <p class="card-text">
+                                The methodology framework proposed by Asked and O’Malley and
+                                further developed by Levac, et al. was used to guide the
+                                scoping review process. A total of 33 reviews met the
+                                inclusion criteria, evaluating a range of interventions
+                                targeted at older people residing in the community or
+                                institutionalised settings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Info2 Cards Section-->
+    <div class="section-info2-card mt-5" style="padding: 0 1rem 1rem 1rem">
+        <div class="container">
+            <!-- Card Inner Area -->
+            <div class="section-info2-card-inner-area">
+                <div class="row">
+                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                        <div class="section-info2-card-container">
+                            <p>Needs Assessment &nbsp;</p>
+                            <img src="./assets/images/info-icon.svg" alt="Info icon" />
+                        </div>
+                        <!-- Custom Tooltip -->
+                        <div class="tooltip-area">
+                            We’re experienced in our individual crafts and understand how
+                            each one of our roles impacts your plan holistically.
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                        <div class="section-info2-card-container">
+                            <p>
+                                Treatment Planning & <br />
+                                Placement
+                            </p>
+                            <img src="./assets/images/info-icon.svg" alt="Info icon" />
+                        </div>
+                        <!-- Custom Tooltip -->
+                        <div class="tooltip-area">
+                            We’re experienced in our individual crafts and understand how
+                            each one of our roles impacts your plan holistically.
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                        <div class="section-info2-card-container">
+                            <p>Transportation & Logistics</p>
+                            <img src="./assets/images/info-icon.svg" alt="Info icon" />
+                        </div>
+                        <!-- Custom Tooltip -->
+                        <div class="tooltip-area">
+                            We’re experienced in our individual crafts and understand how
+                            each one of our roles impacts your plan holistically.
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                        <div class="section-info2-card-container">
+                            <p>Insurance Advocacy</p>
+                            <img src="./assets/images/info-icon.svg" alt="Info icon" />
+                        </div>
+                        <!-- Custom Tooltip -->
+                        <div class="tooltip-area">
+                            We’re experienced in our individual crafts and understand how
+                            each one of our roles impacts your plan holistically.
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                        <div class="section-info2-card-container">
+                            <p>Employment Adovcacy</p>
+                            <img src="./assets/images/info-icon.svg" alt="Info icon" />
+                        </div>
+                        <!-- Custom Tooltip -->
+                        <div class="tooltip-area">
+                            We’re experienced in our individual crafts and understand how
+                            each one of our roles impacts your plan holistically.
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                        <div class="section-info2-card-container">
+                            <p>Aftercare Planning</p>
+                            <img src="./assets/images/info-icon.svg" alt="Info icon" />
+                        </div>
+                        <!-- Custom Tooltip -->
+                        <div class="tooltip-area">
+                            We’re experienced in our individual crafts and understand how
+                            each one of our roles impacts your plan holistically.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section-->
+    <div class="section-video">
+        <div class="container">
+            <div class="video-sec-inner-container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-col-wrapper">
+                            <div class="section-heading-wrapper">
+                                <h2 style="color: #fff"><span class="stroked-text" data-string="Watch">Watch</span> the
+                                    video</h2>
+                            </div>
+                            <!-- heading wrapper -->
+
+                            <ul>
+                                <li>
+                                    <span>Needs Assessment</span>
+                                    <p>
+                                        The Advocacy Evaluation Toolkit contains the instruments
+                                        used to collect data for evaluating the Consumer Voices
+                                        for Coverage program.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span>Insurance Advocacy</span>
+                                    <p>
+                                        We are committed to advocating for appropriate coverage
+                                        and payment policies.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span>Treatment Planning & Placement</span>
+                                    <p>
+                                        Patients can better info1 medical procedures,
+                                        discharge instructions, etc.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- video-col-wrapper -->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="video-col-wrapper d-flex align-items-center justify-content-center">
+
+                        </div>
+                        <!-- video-col-wrapper -->
+                    </div>
+                </div>
+            </div>
+            <!-- video-sec-inner-container -->
+        </div>
+        <!-- theme container -->
+        <img src="./assets/images/vid-bg.png" class="video-bg-img" alt="Section background" />
+        <img src="./assets/images/mob-vid-bg.png" class="mob-video-bg-img" alt="Mobile background" />
+        <img src="./assets/images/vid-opacity-bg.png" class="video-bg-img" style="width: 55%; z-index: 2"
+            alt="background shader" />
+        <div class="videoposture-wrapper">
+            <img src="./assets/images/vid-2nd-bg.jpg" class="videoPosture-img" alt="Kids sitting" />
+            <img src="./assets/images/play-icon.svg" class="videoIcon" alt="Play button" data-bs-toggle="modal"
+                data-bs-target="#samplevideo" />
+        </div>
+    </div>
+
+    <div class="modal fade" id="samplevideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video controls autoplay id="video1">
+                        <source src="/assets/images/video.mp4" type="video/mp4">
+                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-col-wrapper">
+                        <p>@2021 Get an Intervention Inc. All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="footer-col-wrapper">
+                        <p class="rightAlignText">
+                            <a href="">Privacy Policy </a> | <a href="">Terms of use</a> |
+                            <a href="">Site Map</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
