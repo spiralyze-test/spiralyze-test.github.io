@@ -7,8 +7,6 @@
     box-sizing: border-box;
 }
 
-link {}
-
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -55,6 +53,18 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.line-after h2:after {
+    content: "";
+    display: inline-block;
+    height: 0.0625rem;
+    vertical-align: middle;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid #EAEAEA;
+  }
+
 
 .heading-wrapper h2 span.stroked-text::after {
     content: attr(data-string);
