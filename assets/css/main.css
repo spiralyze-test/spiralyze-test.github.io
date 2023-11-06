@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+link {}
+
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -617,7 +619,7 @@ input:-webkit-autofill:active {
 }
 
 .contact-form-area .col-lg-6 {
-    padding: 0 8px;
+    padding: 0 8px;    
 }
 
 .contact-form-area h2 {
@@ -1038,7 +1040,7 @@ span.stroked-text.stroke-color-green::after {
     transition: opacity 0.5s linear;
     position: absolute;
     top: 89.2%;
-    left: 81.8%;
+    left: calc(100% - 16.37rem);
     z-index: 10;
     transition: opacity 0.5s linear;
 }
