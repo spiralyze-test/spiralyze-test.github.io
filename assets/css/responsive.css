@@ -241,7 +241,12 @@
   }
 
   .hero-content-wrapper p {
-    text-align: justify;
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
   }
 
   .contact-form-area {
