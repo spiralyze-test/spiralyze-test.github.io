@@ -540,7 +540,7 @@
         <div class="videoposture-wrapper">
             <img src="/assets/images/vid-2nd-bg.jpg" class="vid-bg-img2" alt="Kids sitting" />
             <div class="play">
-                <img src="/assets/images/play-icon.svg" class="play-icon" alt="Play button" data-bs-toggle="modal"
+                <img src="/assets/images/play-icon.svg" id="playBtn" class="play-icon" alt="Play button" data-bs-toggle="modal"
                     data-bs-target="#videoPlayer" />
             </div>
         </div>
@@ -554,8 +554,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <iframe id="ytplayer" width="100%" height="500px"
-                        src="https://www.youtube.com/embed/Z7f5xkucTA0?si=RN4zS2Vj9V3R5_Ec" frameborder="0"
+                    <iframe id="ytplayer" width="100%" height="500rem"
+                        src="https://www.youtube.com/embed/Z7f5xkucTA0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
@@ -592,9 +592,15 @@
     </script>
     <script type="text/javascript">
         $("#videoPlayer").on('hidden.bs.modal', function (e) {
-            $("#videoPlayer iframe").attr("src", $("#videoPlayer iframe").attr("src"));
+            $("#videoPlayer iframe").attr("src", "https://www.youtube.com/embed/Z7f5xkucTA0");
         });
+
+        $("#playBtn").click(function (e) {
+            $("#videoPlayer iframe").attr("src", "https://www.youtube.com/embed/Z7f5xkucTA0?autoplay=1");
+        });
+
     </script>
+
     <script>
         function mobileMenu() {
             var m = document.getElementById("menu");
