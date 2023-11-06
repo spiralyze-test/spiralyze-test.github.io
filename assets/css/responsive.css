@@ -215,6 +215,7 @@
   .section-hero-inner {
     max-width: 500px;
     margin: 0 auto;
+    margin-bottom: 74px;
   }
 
   .table-layout .content-area {
