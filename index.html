@@ -21,7 +21,8 @@
                 </div>
                 <!-- Menu -->
                 <div class="hamburger-container">
-                    <a href="javascript:void(0);" onclick="mobileMenu()"><img src="/assets/images/hamburger.svg" alt="Menu"></a>
+                    <a href="javascript:void(0);" onclick="mobileMenu()"><img src="/assets/images/hamburger.svg"
+                            alt="Menu"></a>
                 </div>
                 <div class="nav-menu-container">
                     <ul>
@@ -35,14 +36,16 @@
                     </ul>
                 </div>
                 <nav id="menu">
-                    <a href="javascript:void(0);" onclick="mobileMenu()" class="hamburger-close"><img style="height: 20px" src="/assets/images/hamburger-close.svg" alt="Menu"></a>
-                    <ul class="links">                        
+                    <a href="javascript:void(0);" onclick="mobileMenu()" class="hamburger-close"><img
+                            style="height: 20px" src="/assets/images/hamburger-close.svg" alt="Menu"></a>
+                    <ul class="links">
                         <li><a href="" class="active">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
                         <li><a href="">CONTACT</a></li>
                     </ul>
                     <ul class="consult">
-                        <li><a href="tel:123456789"><span style="color: #fff;">Call now for a consult</span> 123.456.789</a></li>
+                        <li><a href="tel:123456789"><span style="color: #fff;">Call now for a consult</span>
+                                123.456.789</a></li>
                     </ul>
                 </nav>
             </div>
@@ -262,7 +265,8 @@
         <div class="container">
             <div class="testimonial-inner">
                 <!-- Carousel Items -->
-                <div id="itemsCaraousel" class="carousel slide" data-bs-ride="true">
+                <div id="itemsCaraousel" class="carousel slide" data-bs-ride="true" data-interval="5000"
+                    data-touch="true" data-ride="carousel">
                     <!-- Carousel Indicators-->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="0" class="active"
@@ -537,9 +541,9 @@
             <img src="/assets/images/vid-2nd-bg.jpg" class="vid-bg-img2" alt="Kids sitting" />
             <div class="play">
                 <img src="/assets/images/play-icon.svg" class="play-icon" alt="Play button" data-bs-toggle="modal"
-                data-bs-target="#videoPlayer" />
+                    data-bs-target="#videoPlayer" />
             </div>
-        </div>        
+        </div>
     </div>
 
     <!-- Video Player Modal -->
@@ -550,11 +554,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <video controls autoplay id="vid">
-                        <source src="/assets/images/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
+                    <iframe id="ytplayer" width="100%" height="700px"
+                        src="https://www.youtube.com/embed/Z7f5xkucTA0?si=RN4zS2Vj9V3R5_Ec" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -586,6 +589,11 @@
     <script src="/assets/js/form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $("#videoPlayer").on('hidden.bs.modal', function (e) {
+            $("#videoPlayer iframe").attr("src", $("#videoPlayer iframe").attr("src"));
+        });
     </script>
     <script>
         function mobileMenu() {
