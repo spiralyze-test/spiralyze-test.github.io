@@ -563,7 +563,7 @@ select:-webkit-autofill:active {
 .section-hero {
     width: 100%;
     height: auto;
-    background-image: url("/assets/images/bg-image.png");
+    background-image: url("../images/bg-image.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -990,7 +990,7 @@ span.stroked-text.stroke-color-green::after {
 
 .video-col-wrapper ul {
     margin-top: 40px;
-    list-style-image: url('/assets/images/checkmark.svg');
+    list-style-image: url('../images/checkmark.svg');
 }
 
 .video-col-wrapper ul li {
@@ -1072,7 +1072,7 @@ span.stroked-text.stroke-color-green::after {
 }
 
 .play img:hover {
-    content: url("/assets/images/play-icon-active.svg");
+    content: url("../images/play-icon-active.svg");
 }
 
 .mob-video-bg-img {
