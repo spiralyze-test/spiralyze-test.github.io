@@ -893,6 +893,10 @@ span.stroked-text.stroke-color-green::after {
     padding: 0px 0px;
 }
 
+.carousel-indicators button{
+    padding: 0px 0px;
+}
+
 .carousel-indicators .active {
     background-color: #5BC8AF;
 }
