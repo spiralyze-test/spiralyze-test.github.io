@@ -890,6 +890,7 @@ span.stroked-text.stroke-color-green::after {
 
 .carousel-indicators {
     bottom: -40% !important;
+    padding: 0px 0px;
 }
 
 .carousel-indicators .active {
