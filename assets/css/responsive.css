@@ -230,7 +230,7 @@
 
   .table-layout .content-area p {
     max-width: 50%;
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .section-hero {
@@ -260,7 +260,7 @@
     margin: 20px auto;
   }
 
-  .contact-form-area .col-lg-6 {
+  .contact-form-area .col-pc-6 {
     padding: 0 8px;
     width: 50%;
   }

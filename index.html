@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiralyze</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
 </head>
 
 <body>
     <!-- Header -->
     <div class="section-header">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="disp-flex justify-content-between align-items-center" style="padding-inline: 12px;">
                 <!-- Logo -->
                 <div class="logo-container">
                     <img src="./assets/images/logo.svg" alt="Logo" height="70">
@@ -59,8 +59,8 @@
             <div class="section-hero-inner">
                 <div class="row">
                     <!-- Text Column -->
-                    <div class="col-lg-6">
-                        <div class="hero-col-wrapper d-flex align-items-center">
+                    <div class="col-pc-6">
+                        <div class="hero-col-wrapper disp-flex align-items-center">
                             <!-- Content Wrapper -->
                             <div class="hero-content-wrapper">
                                 <h1><span data-string="GET AN">GET AN</span> INTERVENTION</h1>
@@ -75,13 +75,13 @@
                         </div>
                     </div>
                     <!-- Form Column -->
-                    <div class="col-lg-6">
+                    <div class="col-pc-6 form-col">
                         <div class="hero-col-wrapper">
                             <div class="contact-form-area">
-                                <h2 class="mb-3">Contact Us</h2>
+                                <h2 class="margin-bottom-1">Contact Us</h2>
                                 <form id="formContact">
                                     <div class="row">
-                                        <div class="col-lg-6">
+                                        <div class="col-pc-6">
                                             <div class="input-container">
                                                 <label class="input-label">First Name</label>
                                                 <input type="text" class="input-1" onfocus="setFocus(true)"
@@ -92,7 +92,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6">
+                                        <div class="col-pc-6">
                                             <!-- Text Input-->
                                             <div class="input-container">
                                                 <label class="input-label">Last Name</label>
@@ -103,7 +103,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6">
+                                        <div class="col-pc-6">
                                             <!-- Text Input-->
                                             <div class="input-container">
                                                 <label class="input-label">Business Email</label>
@@ -114,7 +114,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6">
+                                        <div class="col-pc-6">
                                             <!-- Text Input-->
                                             <div class="input-container">
                                                 <label class="input-label">Company</label>
@@ -125,7 +125,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-12 mb-4" style="padding-inline: 8px;">
+                                        <div class="col-pc-12 margin-bottom-2 dropdown-btn" style="padding-inline: 8px;">
                                             <!-- Dropdown -->
                                             <div class="input-container">
                                                 <div class="input-label">Country</div>
@@ -140,7 +140,7 @@
                                             </div>
                                         </div>
 
-                                        <button class="custom-btn primary-btn d-block mx-auto" type="submit">
+                                        <button class="custom-btn primary-btn margin-auto" type="submit">
                                             <img src="./assets/images/send-icon.svg" alt="sumbit-icon">
                                             Submit
                                         </button>
@@ -167,7 +167,7 @@
             <div class="info1-inner">
                 <!-- Image Wrapper-->
                 <div class="info1-images-wrapper">
-                    <div class="row rowCols3">
+                    <div class="row">
                         <div class="col">
                             <!-- Info Card Wrapper -->
                             <div class="info1-card-wrapper">
@@ -198,16 +198,20 @@
 
                 </div>
                 <!-- Section Header -->
-                <div class="heading-wrapper line-after mt-5">
-                    <h2><span class="stroked-text" data-string="WE">WE</span> UNDERSTAND</h2>
-                </div>
 
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="heading-wrapper line-after margin-top-2" style="padding-inline: 12px;">
+                        <h2><span class="stroked-text" data-string="WE">WE</span> UNDERSTAND</h2>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-pc-4 col-mob-6">
                         <div class="info1-card-wrapper">
                             <!-- Text Content-->
                             <div class="content-area">
-                                <p class="card-text mt-2">
+                                <p class="card-text margin-top-1">
                                     Older adults want to play active and meaningful roles in
                                     their lives, including as part of a social network, a
                                     neighborhood, and a community. Service providers and
@@ -219,11 +223,11 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-pc-4 col-mob-6">
                         <div class="info1-card-wrapper">
                             <!-- Text Content-->
                             <div class="content-area">
-                                <p class="card-text mt-2">
+                                <p class="card-text margin-top-1">
                                     Older adults want to stay active and contribute to society in a reciprocal
                                     manner (meaning that they want to exchange their services and skills with others
                                     for the mutual benefit of the neighborhood or community). Qualitative and
@@ -234,17 +238,17 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-12">
+                    <div class="col-pc-4 col-mob-12">
                         <div class="info1-card-wrapper table-layout">
                             <!-- Text Content-->
                             <div class="content-area">
-                                <p class="card-text mt-2">
+                                <p class="card-text margin-top-1">
                                     To stimulate social contacts, neighborhood initiatives can
                                     be developed. Social meeting places, such as pubs and
                                     churches can help to foster the development of close and
                                     peripheral relationships.
                                 </p>
-                                <button class="custom-btn w-100 theme-secondary-btn bg-transparent mt-3">
+                                <button class="custom-btn width-100 theme-secondary-btn bg-transparent mt-3">
                                     92% Success Rate &nbsp;
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="100%" viewBox="0 0 17 14"
                                         fill="none">
@@ -266,20 +270,19 @@
         <div class="container">
             <div class="testimonial-inner">
                 <!-- Carousel Items -->
-                <div id="itemsCaraousel" class="carousel slide" data-bs-ride="true" data-interval="5000"
-                    data-touch="true" data-ride="carousel">
+                <div id="itemsCaraousel" class="carousel slide" data-interval="false" data-ride="carousel">
                     <!-- Carousel Indicators-->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="0" class="active"
+                        <button type="button" data-target="#itemsCaraousel" data-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="1"
+                        <button type="button" data-target="#itemsCaraousel" data-slide-to="1"
                             aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#itemsCaraousel" data-bs-slide-to="2"
+                        <button type="button" data-target="#itemsCaraousel" data-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
                             <div class="testimonial-card-container">
                                 <div class="img-wrapper shadow">
                                     <img src="./assets/images/client1.png" alt="First Client" class="fit-image" />
@@ -296,7 +299,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item">
+                        <div class="item">
                             <div class="testimonial-card-container">
                                 <div class="img-wrapper">
                                     <img src="./assets/images/client2.png" alt="Second Client" class="fit-image" />
@@ -313,7 +316,7 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item">
+                        <div class="item">
                             <div class="testimonial-card-container">
                                 <div class="img-wrapper shadow">
                                     <img src="./assets/images/client3.png" alt="Thrid Client" class="fit-image" />
@@ -332,37 +335,40 @@
                     </div>
 
                     <!-- Previous Icon -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#itemsCaraousel"
-                        data-bs-slide="prev">
+                    <button class="left carousel-control carousel-control-prev-icon" type="button"
+                        data-target="#itemsCaraousel" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
                     </button>
                     <!-- Next Icon -->
-                    <button class="carousel-control-next" type="button" data-bs-target="#itemsCaraousel"
-                        data-bs-slide="next">
+                    <button class="right carousel-control carousel-control-next-icon" type="button"
+                        data-target="#itemsCaraousel" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <!-- Info2 Section -->
-    <div class="secion-info2 section-padding pb-0">
+    <div class="secion-info2 section-padding padding-bottom-0">
         <div class="container">
             <div class="info2-inner">
-                <!-- Heading Wrapper -->
-                <div class="heading-wrapper line-after">
-                    <h2>
-                        <span class="stroked-text" data-string="We">We</span>
-                        can organize everything
-                    </h2>                    
+
+                <div class="row">
+                    <!-- Heading Wrapper -->
+                    <div class="heading-wrapper line-after" style="padding-inline: 12px;">
+                        <h2>
+                            <span class="stroked-text" data-string="We">We</span>
+                            can organize everything
+                        </h2>
+                    </div>
                 </div>
 
                 <!-- Row -->
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-pc-4">
                         <!-- Card Wrapper -->
                         <div class="info2-card-wrapper">
                             <p class="card-text1">
@@ -371,7 +377,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-pc-4 col-mob-6">
                         <div class="info2-card-wrapper">
                             <p class="card-text">
                                 Loneliness and social isolation are growing public health
@@ -384,7 +390,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-pc-4 col-mob-6">
                         <div class="info2-card-wrapper">
                             <p class="card-text">
                                 The methodology framework proposed by Asked and O’Malley and
@@ -402,12 +408,12 @@
     </div>
 
     <!--Info2 Cards Section-->
-    <div class="section-info2-card mt-5" style="padding: 0 1rem 1rem 1rem">
+    <div class="section-info2-card margin-top-2" style="padding: 0 1rem 1rem 1rem">
         <div class="container">
             <!-- Card Inner Area -->
             <div class="section-info2-card-inner">
                 <div class="row">
-                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                    <div class="col-pc-4 margin-bottom-1 relative col-mob-6">
                         <div class="section-info2-card-container">
                             <p>Needs Assessment &nbsp;</p>
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
@@ -419,7 +425,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                    <div class="col-pc-4 margin-bottom-1 relative col-mob-6">
                         <div class="section-info2-card-container">
                             <p>
                                 Treatment Planning & <br />
@@ -434,7 +440,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                    <div class="col-pc-4 margin-bottom-1 relative col-mob-6">
                         <div class="section-info2-card-container">
                             <p>Transportation & Logistics</p>
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
@@ -446,7 +452,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                    <div class="col-pc-4 margin-bottom-1 relative col-mob-6">
                         <div class="section-info2-card-container">
                             <p>Insurance Advocacy</p>
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
@@ -458,7 +464,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                    <div class="col-pc-4 margin-bottom-1 relative col-mob-6">
                         <div class="section-info2-card-container">
                             <p>Employment Adovcacy</p>
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
@@ -470,7 +476,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-3 relative col-sm-6">
+                    <div class="col-pc-4 margin-bottom-1 relative col-mob-6">
                         <div class="section-info2-card-container">
                             <p>Aftercare Planning</p>
                             <img src="./assets/images/info-icon.svg" alt="Info icon" />
@@ -491,7 +497,7 @@
         <div class="container">
             <div class="video-inner-container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-pc-6">
                         <!-- Video Columns Wrapper -->
                         <div class="video-col-wrapper">
                             <!-- Heading Wrapper-->
@@ -526,8 +532,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="video-col-wrapper d-flex align-items-center justify-content-center">
+                    <div class="col-pc-6">
+                        <div class="video-col-wrapper disp-flex align-items-center justify-content-center">
                         </div>
                     </div>
                 </div>
@@ -541,40 +547,41 @@
         <div class="videoposture-wrapper">
             <img src="./assets/images/vid-2nd-bg.jpg" class="vid-bg-img2" alt="Kids sitting" />
             <div class="play">
-                <img src="./assets/images/play-icon.svg" id="playBtn" class="play-icon" alt="Play button" data-bs-toggle="modal"
-                    data-bs-target="#videoPlayer" />
+                <img src="./assets/images/play-icon.svg" id="playBtn" class="play-icon btn-open"
+                    alt="Play button" />
             </div>
         </div>
     </div>
 
     <!-- Video Player Modal -->
-    <div class="modal" id="videoPlayer" tabindex="-1">
+    <section class="modal hidden" id="videoPlayer">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <iframe id="ytplayer" width="100%" height="500rem"
-                        src="https://www.youtube.com/embed/Z7f5xkucTA0" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
+            <div class="modal-header">
+                <button type="button" class="btn-close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe id="ytplayer" width="100%" height="500rem" src="https://www.youtube.com/embed/Z7f5xkucTA0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </div>
-    </div>
+        </div>
+    </section>
+
 
     <!-- Footer Section -->
     <div class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-pc-6">
                     <div class="footer-col-wrapper">
                         <p>@2021 Get an Intervention Inc. All rights reserved.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-pc-6">
                     <div class="footer-col-wrapper">
                         <p class="rightAlignText">
                             <a href="">Privacy Policy </a> | <a href="">Terms of use</a> |
@@ -588,30 +595,9 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/form.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript">
-        $("#videoPlayer").on('hidden.bs.modal', function (e) {
-            $("#videoPlayer iframe").attr("src", "https://www.youtube.com/embed/Z7f5xkucTA0");
-        });
+    <script src="./assets/js/carousel.js"></script>   
+    <script src="./assets/js/main.js"></script>
 
-        $("#playBtn").click(function (e) {
-            $("#videoPlayer iframe").attr("src", "https://www.youtube.com/embed/Z7f5xkucTA0?autoplay=1");
-        });
-
-    </script>
-
-    <script>
-        function mobileMenu() {
-            var m = document.getElementById("menu");
-            if (m.classList.contains("visible")) {
-                m.classList.remove("visible");
-            } else {
-                m.classList.add("visible");
-            }
-        }
-    </script>
 </body>
 
 </html>
